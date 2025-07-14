@@ -34,7 +34,7 @@ jobs:
         with: 
           name: my-artifact
 
-     -  name: List downloaded files
+      - name: List downloaded files
         run: ls
-     -  name: Show contents of hello.txt
+      - name: Show contents of hello.txt
         run: cat hello.txt
