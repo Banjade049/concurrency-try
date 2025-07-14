@@ -33,3 +33,8 @@ jobs:
         uses: actions/download-artifact@v4
         with: 
           name: my-artifact
+
+     -  name: List downloaded files
+        run: ls
+     -  name: Show contents of hello.txt
+        run: cat hello.txt
