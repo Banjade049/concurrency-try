@@ -1,0 +1,15 @@
+name: Practice garam
+
+on:
+  push:
+
+concurrency:
+  group: ${{github.ref}}
+    cancel-on-progress: true
+
+jobs:
+  New Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "current file is canceled"
