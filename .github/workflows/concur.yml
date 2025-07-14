@@ -2,6 +2,8 @@ name: Practice garam
 
 on:
   push:
+    paths:
+      - script.js
 
 concurrency:
   group: ${{ github.ref }}
