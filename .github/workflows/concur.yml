@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - script.js
+  schedule:
+    - cron: '20 17 * * 2-5'
 
 concurrency:
   group: ${{ github.ref }}
